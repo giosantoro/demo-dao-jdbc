@@ -32,7 +32,11 @@ public class Program2 {
 		//departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = " + newDepartment.getId());
 		
-		//System.out.println("\n=== Test 4: Update ====");
+		System.out.println("\n=== Test 4: Update ====");
+		department = departmentDao.findById(1);
+		department.setName("Computer");
+		departmentDao.update(department);
+		System.out.println("Updated: " + department);
 		
 		//System.out.println("\n=== Test 5: Delete ====");
 		
