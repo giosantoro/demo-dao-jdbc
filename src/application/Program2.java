@@ -29,7 +29,7 @@ public class Program2 {
 		
 		System.out.println("\n=== Test 3: Insert ====");
 		Department newDepartment = new Department(null, "Illumination");
-		//departmentDao.insert(newDepartment);
+		departmentDao.insert(newDepartment);
 		System.out.println("Inserted! New id = " + newDepartment.getId());
 		
 		System.out.println("\n=== Test 4: Update ====");
@@ -38,7 +38,11 @@ public class Program2 {
 		departmentDao.update(department);
 		System.out.println("Updated: " + department);
 		
-		//System.out.println("\n=== Test 5: Delete ====");
+		System.out.println("\n=== Test 5: Delete ====");
+		System.out.print("Type an id of the department to be deleted: ");
+		int del = sc.nextInt();
+		departmentDao.deleteById(del);
+		System.out.println("Deleted department with id " + del);
 		
 		sc.close();
 		
