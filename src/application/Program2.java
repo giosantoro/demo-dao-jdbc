@@ -11,7 +11,7 @@ import model.entities.Department;
 public class Program2 {
 
 	public static void main(String[] args) {
-		
+		//test
 		Scanner sc = new Scanner(System.in);
 		
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
